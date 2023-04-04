@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466656915989",
+    "project_id": "mapt-cc53e",
+    "storage_bucket": "mapt-cc53e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466656915989:android:73150e16730eebeaf0141c",
+        "android_client_info": {
+          "package_name": "com.adrien.mapt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466656915989-dpuvutij62575o85vi8cbk66s5b6cm88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDii1gYlMb-IoQ5sF1DvVlwEEIEseUQIGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466656915989-dpuvutij62575o85vi8cbk66s5b6cm88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
