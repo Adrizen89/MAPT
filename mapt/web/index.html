@@ -1,3 +1,5 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+String apiKey = dotenv.env['API_KEY']
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +28,7 @@
   <meta name="apple-mobile-web-app-title" content="mapt">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhORKrcfuMra2C1QNWHABM1Q4sMbjAu1s"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key={{js}}apiMapKey{{js}}"></script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>

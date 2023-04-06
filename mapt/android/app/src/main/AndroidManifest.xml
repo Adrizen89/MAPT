@@ -1,3 +1,5 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+String apiKey = dotenv.env['API_KEY']
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mapt">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -34,6 +36,6 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAhORKrcfuMra2C1QNWHABM1Q4sMbjAu1s"/>
+            android:value="@string/API_MAP"/>
     </application>
 </manifest>

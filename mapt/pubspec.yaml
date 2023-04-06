@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_maps_flutter_web: ^0.4.0+7
   firebase_core_web: ^2.3.0
+  flutter_config: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +59,7 @@ dev_dependencies:
   google_maps_flutter: ^2.2.5
   flutter_localization: ^0.1.10
   geolocator: ^9.0.2
+  flutter_dotenv: ^5.0.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -71,8 +73,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+      - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -5,22 +5,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
-import 'package:mapt/home.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'config.dart';
 
 final FirebaseFirestore firestore = FirebaseFirestore.instance;
 final CollectionReference markersRef = firestore.collection('markers');
 
-void main() async {
+Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-          apiKey: "AIzaSyCjldkhDQ2f_MpcKOmrjLCbLL0B6knOQJs",
-          authDomain: "mapt-cc53e.firebaseapp.com",
-          projectId: "mapt-cc53e",
-          storageBucket: "mapt-cc53e.appspot.com",
-          messagingSenderId: "466656915989",
-          appId: "1:466656915989:web:91031f4a2c762cb0f0141c"));
+    apiKey: api_key,
+    authDomain: authDomain,
+    projectId: projectId,
+    storageBucket: storageBucket,
+    messagingSenderId: messagingSenderId,
+    appId: appId,
+  ));
   runApp(MaterialApp(
     home: MapSample(),
   ));
@@ -152,7 +153,7 @@ class MapSampleState extends State<MapSample> {
             TextField(
               controller: titleController,
               decoration: InputDecoration(
-                labelText: 'Titre',
+                labelText: 'Title',
               ),
             ),
             TextField(
